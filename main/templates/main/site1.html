@@ -1,0 +1,361 @@
+{% extends 'main/base.html' %}
+What up
+{% block title %}
+Site 1
+{% endblock %}
+{% block pagetitle %}
+Site 1
+{% endblock %}
+
+{% block content %}
+<div class="section-admin container-fluid" style="padding-top: 5%;">
+    
+    <div class="container-fluid" style="padding-left: 15%;">
+        
+        <div class="row">
+            
+            <div class="freq_gauge freq_gauge__liveupdate" id="freq_gauge">
+                
+                <div class="freq_gauge--container" id="freq_gauge-container">
+                    
+                    <div class="freq_gauge--marker"></div>
+                    <div class="freq_gauge--background"></div>
+                    <div class="freq_gauge--center"><h1 class="freq_guage_h1"></h1><h5>Frequency (Hz)</h5></div>
+                    <div class="freq_gauge--data"></div>
+                    <div class="freq_gauge--needle"></div>
+                    
+                
+               
+                </div>
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="white-box analytics-info-cs mg-b-30">
+                        <h1 class="box-title">Total Units</h1>
+                        <ul class="list-inline two-part-sp">
+                            
+                            
+                            <li class="text-right"><h1 class="counter sales-sts-ctn">7469</h1><i class="fa fa-plug" aria-hidden="true"></i> </li>
+                            <li class="text-right"><span class="counter sales-sts-ctn">KwH</span></li>
+                        </ul>
+                    </div>
+                  </div>
+        </div>
+    </div>
+    
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="white-box tranffic-als-inner">
+                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"><i class="fa fa-sort-asc"></i> KW</small> Phase 1 Power</h3>
+                    <canvas id="myChart1" width="800" height="400"></canvas> 
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="white-box tranffic-als-inner">
+                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Amperes</small> Phase 1</h3>
+                    <div class="gauge1">
+                        <div class="gauge1__body">
+                          <div class="gauge1__fill"></div>
+                          <div class="gauge1__cover"></div>
+                        </div>
+                      </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="white-box tranffic-als-inner">
+                    <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Power Factor</small> Phase 1</h3>
+                    <div class="gauge4">
+                        <div class="gauge4__body">
+                          <div class="gauge4__fill"></div>
+                          <div class="gauge4__cover"></div>
+                        </div>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="traffic-analysis-area" style="padding-top: 5%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner res-mg-t-30">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-two"><i class="fa fa-sort-desc"></i> KW</small>Phase 2 Power</h3>
+                       <div style="color: red;"> <canvas id="myChart2" width="800" height="400" ></canvas> </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Amperes</small> Phase 2</h3>
+                        <div class="gauge2">
+                            <div class="gauge2__body">
+                              <div class="gauge2__fill"></div>
+                              <div class="gauge2__cover"></div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Power Factor</small> Phase 2</h3>
+                        <div class="gauge3">
+                            <div class="gauge3__body">
+                              <div class="gauge3__fill"></div>
+                              <div class="gauge3__cover"></div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<div class="section-admin container-fluid" style="padding-top: 5%;">
+    <div class="traffic-analysis-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner res-mg-t-30">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-three"><i class="fa fa-sort-asc"></i> KW</small>Phase 3 Power</h3>
+                        <canvas id="myChart3" width="800" height="400"></canvas> 
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Amperes</small> Phase 3</h3>
+                        <div class="gauge5">
+                            <div class="gauge5__body">
+                              <div class="gauge5__fill"></div>
+                              <div class="gauge5__cover"></div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="white-box tranffic-als-inner">
+                        <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"> Power Factor</small> Phase 3</h3>
+                        <div class="gauge6">
+                            <div class="gauge6__body">
+                              <div class="gauge6__fill"></div>
+                              <div class="gauge6__cover"></div>
+                            </div>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="padding-left: 10%; padding-top: 5%;">
+        <div class="product-sales-chart">
+            <div class="portlet-title">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="caption pro-sl-hd">
+                            <span class="caption-subject text-uppercase"><b>Power Consumption</b></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="actions graph-rp">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-grey active">
+                                    <input type="radio" name="options" class="toggle" id="option1" checked="">Today</label>
+                                <label class="btn btn-grey">
+                                    <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                  <h1 id="app"  style="color: red;">
+                    <canvas id="bar-chart" width="800" height="450"></canvas>   
+                  </h1>
+                
+        </div>
+    </div>
+
+</div>
+<script>
+
+    console.log('How are you')
+    
+    const gaugeElement1 = document.querySelector(".gauge1");
+    const gaugeElement2 = document.querySelector(".gauge2");
+    const gaugeElement3 = document.querySelector(".gauge3");
+    const gaugeElement4 = document.querySelector(".gauge4");
+    const gaugeElement5 = document.querySelector(".gauge5");
+    const gaugeElement6 = document.querySelector(".gauge6");
+    
+    
+    
+    
+    function setGaugeValue1(gauge, value) {
+      
+      gauge.querySelector(".gauge1__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge1__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    function setGaugeValue2(gauge, value) {
+      
+      gauge.querySelector(".gauge2__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge2__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    function setGaugeValue3(gauge, value) {
+      
+    
+      gauge.querySelector(".gauge3__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge3__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    function setGaugeValue4(gauge, value) {
+      
+      gauge.querySelector(".gauge4__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge4__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    
+    function setGaugeValue5(gauge, value) {
+      
+      gauge.querySelector(".gauge5__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge5__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    
+    function setGaugeValue6(gauge, value) {
+      
+    
+      gauge.querySelector(".gauge6__fill").style.transform = `rotate(${
+        value / 10
+      }turn)`;
+      gauge.querySelector(".gauge6__cover").textContent = `${(
+        value 
+      )}`;
+    }
+    
+    setGaugeValue1(gaugeElement1, 0.7);
+    setGaugeValue2(gaugeElement2, 0.4);
+    setGaugeValue3(gaugeElement3, 0.2);
+    setGaugeValue4(gaugeElement4, 0.3);
+    setGaugeValue5(gaugeElement5, 0.4);
+    setGaugeValue6(gaugeElement6, 0.7);
+
+    function freq_gauge(el) {
+
+// ##### Private Properties and Attributes
+
+var element,      // Containing element for the info component
+data,         // `.freq_gauge--data` element
+needle,       // `.freq_gauge--needle` element
+value = 0.0,  // Current freq_gauge value from 0 to 1
+prop;         // Style for transform
+
+// ##### Private Methods and Functions
+
+var setElement = function(el) {
+// Keep a reference to the various elements and sub-elements
+element = el;
+data = element.querySelector(".freq_gauge--data");
+needle = element.querySelector(".freq_gauge--needle");
+giveValue = element.querySelector(".freq_gauge--center").querySelector(".freq_guage_h1");
+};
+
+var setValue = function(x) {
+value = x;
+var turns = -0.5 + ((x/100) * 0.5);
+data.style[prop] = "rotate(" + turns + "turn)";
+needle.style[prop] = "rotate(" + turns + "turn)";
+giveValue.textContent = `${(
+        value
+      )}`;
+};
+
+// ##### Object to be Returned
+
+function exports() { };
+
+// ##### Public API Methods
+
+exports.element = function(el) {
+if (!arguments.length) { return element; }
+setElement(el);
+return this;
+};
+
+exports.value = function(x) {
+if (!arguments.length) { return value; }
+setValue(x);
+return this;
+};
+
+// ##### Initialization
+
+var body = document.getElementsByTagName("body")[0];
+["webkitTransform", "mozTransform", "msTransform", "oTransform", "transform"].
+forEach(function(p) {
+    if (typeof body.style[p] !== "undefined") { prop = p; }
+}
+);
+
+if (arguments.length) {
+setElement(el);
+}
+
+return exports;
+
+};
+
+var freq_gauge = new freq_gauge(document.getElementById("freq_gauge"));
+
+freq_gauge.value(50);
+
+  
+    
+    var socket;
+    
+    var socket = new WebSocket('ws://172.20.11.180:8000/ws/graph/');
+    
+    socket.onmessage = function(e){
+        var djangoData = JSON.parse(e.data);
+        console.log(djangoData);
+        
+    
+    //         document.querySelector(".gauge1").querySelector(".gauge1__fill").style.transform = `rotate(${
+    //     guage.data / 10
+    //   }turn)`;
+    //       document.querySelector(".gauge1").querySelector(".gauge1__cover").textContent = `${(
+    //     (guage.data).toFixed(2) 
+    //   )}`;
+        
+        
+    }
+   
+    </script>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+
+{% load crispy_forms_tags %}
+
+<!doctype html>
+<html>
+    <head>
+        <style type="text/css">
+            .sidenav{
+                
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index:1;
+                top:0;
+                Left:0;
+                background-color: #111;
+                overflow-x:hidden;
+                padding-top: 20px; 
+
+            }
+
+            .sidenav a{
+                size:25px;
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                color: #818181;
+                display:block;
+            }
+            .sidenav a:hover{
+                color: #f1f1f1;
+                
+            }
+            .main{
+                margin-left:  160px;
+                padding: 0px 10px
+            }
+
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
+        <title>
+           LOGIN PAGE
+        </title>
+    </head>
+    <body>
+        
+        
+        <div id = 'content', name = 'content', class = "main">
+            <div class="row justify-content-center">
+
+            <div class="col-8">
+                <h1 class="mt-2">AU Power Management System</h1>
+                <hr class="mt-0 mb-4">
+            <!-- % if user.is_authenticated% -->
+            <form method="post" class="form-group">
+                {% csrf_token %}
+                {{form|crispy}}
+                <button type="submit" class="btn btn-success">Login</button>
+                <p>
+                    Don't have account? Register <a href="/register">Here</a>
+                </p>
+        
+            </form>
+        
+        
+        </div>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+  

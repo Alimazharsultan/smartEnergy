@@ -1,0 +1,98 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block pagetitle %}
+Home
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="author-area-pro" style="padding-top: 5%; padding-bottom: 25%;">
+  <div class="container-fluid">
+      <div class="row">
+        
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a title="FMC" href="/site1">
+              <div class="personal-info-wrap">
+                  <div class="widget-head-info-box">
+                      <div class="persoanl-widget-hd">
+                          <h2>FMC</h2>
+                          
+                      </div>
+                      
+                      <img src="{% static 'img/site/FMC.jpg' %}" class="" alt="profile">
+                      
+                      
+                  </div>
+                  <div class="widget-text-box">
+                      <h4>Site 1: FMC</h4>
+                      <div class="social-widget-result" style="padding-left: 20%;">
+                        <span>45 Rooms</span> |
+                        <span>35 Offices</span> |
+                        <span>15 Misc.</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a title="IAA" href="/site2">
+              <div class="personal-info-wrap">
+                  <div class="widget-head-info-box">
+                      <div class="persoanl-widget-hd">
+                          <h2>IAA</h2>
+                          
+                      </div>
+                      
+                      <img src="{% static 'img/site/IAA.jpg' %}" class="" alt="profile">
+                      
+                      
+                  </div>
+                  <div class="widget-text-box">
+                      <h4>Site 1: IAA</h4>
+                      <div class="social-widget-result" style="padding-left: 20%;">
+                        <span>75 Rooms</span> |
+                        <span>30 Offices</span> |
+                        <span>25 Misc.</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <a title="Mechatronics" href="/site3">
+              <div class="personal-info-wrap">
+                  <div class="widget-head-info-box">
+                      <div class="persoanl-widget-hd">
+                          <h2>MTS</h2>
+                          
+                      </div>
+                      
+                      <img src="{% static 'img/site/MECHA.jpg' %}" class="" alt="profile">
+                      
+                      
+                  </div>
+                  <div class="widget-text-box">
+                      <h4>Site 1: Mechatronics</h4>
+                      <div class="social-widget-result" style="padding-left: 20%;">
+                        <span>35 Rooms</span> |
+                        <span>25 Offices</span> |
+                        <span>5 Misc.</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

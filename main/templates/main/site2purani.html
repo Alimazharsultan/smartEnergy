@@ -1,0 +1,367 @@
+{% extends 'main/base.html' %}
+What up
+{% block title %}
+Site 2
+{% endblock %}
+{% block pagetitle %}
+Site 2
+{% endblock %}
+
+{% block content %}
+<div class="section-admin container-fluid" style="padding-top: 4%;">
+    <div class="section-admin container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="white-box tranffic-als-inner">
+                    <h3 class="box-title" style="padding: 3px; text-align: center;"><small id="TimeDikhao" class="pull-right m-t-10 last-month-sc cl-one">RT</small>Phase 1</h3>					    <div class="stats-row">
+                                        	
+                        <div class="stat-item">
+                            <h6>Power Factor</h6>
+                            <h6 id="powerfactor1">2</h6></div>
+                            
+                        <div class="stat-item">
+                            <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase1current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                    <canvas id="myChart1" width="40" height="20"></canvas> </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="white-box tranffic-als-inner res-mg-t-30">
+<h3 class="box-title" style="padding: 3px; text-align: center;"><small id="TimeDikhao" class="pull-right m-t-10 last-month-sc cl-one">RT</small>Phase 2</h3>	
+                    <div class="stats-row">
+                        <div class="stat-item">
+                        <h6>Power Factor</h6>
+                            <h6 id="powerfactor2">1</h6></div>
+
+                        <div class="stat-item">
+                              <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase2current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                    <canvas id="myChart2" width="40" height="20"></canvas> </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="white-box tranffic-als-inner res-mg-t-30">
+<h3 class="box-title" style="padding: 3px; text-align: center;">Phase 3</h3>	
+                    <div class="stats-row">
+
+                        <div class="stat-item">
+                            <h6>Power Factor</h6>
+                            <h6 id="powerfactor2">1</h6></div>
+                            
+                        <div class="stat-item">
+                            <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase3current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                         <canvas id="myChart3" width="40" height="20"></canvas> </div>
+                </div>
+            </div>
+        </div>  
+        <div class="container-fluid" style="padding-top: 0.5%;">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="product-sales-chart">
+                        <div class="portlet-title">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="caption pro-sl-hd">
+                                        <span class="caption-subject text-uppercase"><b>Power Consumption</b></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="actions graph-rp">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-grey active">
+                                                <input type="radio" name="options" class="toggle" id="option1" checked="">Today</label>
+                                            <label class="btn btn-grey">
+                                                <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                              <h1 id="app"  style="color: red;">
+                                <canvas id="bar-chart2" width="800" height="450"></canvas>   
+                              </h1>
+                            
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="white-box analytics-info-cs mg-b-30 res-mg-t-30">
+                        
+
+                        <h4 style="color: white; text-align: center">Frequency</h4>
+
+                                <div class="gauge7">
+                        			<div class="gauge7__body">
+                          			<div class="gauge7__fill"></div>
+                          			<div class="gauge7__cover"></div>
+                        			</div>
+                      			</div>
+                        
+
+                    
+                    </div>
+                    <div class="white-box analytics-info-cs mg-b-30">
+                        <h3 class="box-title">Total Consumption Today</h3>
+                        <ul class="list-inline two-part-sp">
+                            <li>
+
+                            </li>
+                            <li class="text-right"><i class="fa fa-bolt" aria-hidden="true"></i> <span class="counter sales-								sts-ctn">6011</span></li>
+                        </ul>
+                    </div>
+                                        <div class="white-box analytics-info-cs mg-b-30">
+                        <h3 class="box-title">Total Consumption Monthly</h3>
+                        <ul class="list-inline two-part-sp">
+                            <li>
+
+                            </li>
+                            <li class="text-right"><i class="fa fa-bolt"  aria-hidden="true"></i> <span class="counter sales-								sts-ctn">6011</span></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+      const gaugeElement7 = document.querySelector(".gauge7");
+      function setGaugeValue7(gauge, value) {
+      
+      gauge.querySelector(".gauge7__fill").style.transform = `rotate(${
+        value / 200
+      }turn)`;
+      gauge.querySelector(".gauge7__cover").textContent = `${(
+        value 
+      )} Hz`;
+    }
+   new Chart(document.getElementById("bar-chart2"), {
+    type: 'bar',
+    data: {
+    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Firdayy", "Saturday", "Sunday"],
+    datasets: [
+        {
+        label: "Weekly",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2"],
+        data: [878,827,834,884,833, 424,323],
+        borderColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2"],
+        },
+        {
+        label: "Monthly",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2"],
+        data: [878,827,834,884,833, 424,323,878,827,834,884,833, 424,323,878,827,834,884,833, 424,323,878,827,834,884,833, 					424,323,234,234],
+        borderColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2"],
+        }
+    ]
+    },
+    options: {
+    responsive: true,
+    legend: { display: false },
+    title: {
+        display: true,
+        text: 'Total Power Consumption'
+    },
+    		scales: {
+                y: [{
+                    ticks: {
+                        fontColor: "red",
+                        fontSize: 18,
+                        stepSize: 1,
+                        weight: 800,
+                    }
+                }],
+                x: [{
+                    ticks: {
+                        fontColor: "red",
+                        fontSize: 18,
+                        stepSize: 1,
+                        weight: 800,
+                    }
+                }]
+            }
+            
+    }
+    });
+	setGaugeValue7(gaugeElement7, 50);
+    var ctx = document.getElementById('myChart1').getContext('2d');
+    var graphData ={
+        type: 'line',
+        data: {
+            labels: ['0', '1', '2','3', '4', '5'],
+            datasets: [{
+                label: 'Real Time Power (Watts)',
+                data: [12,12,12,12,12],
+            	backgroundColor: 'red',
+            	borderColor: 'red',
+            	color: 'red',
+            	
+            	tension: 0.4, 
+            	pointRadius: 0,
+            }]
+        },
+        options : {
+
+        	scales:{
+        		x:{
+        			display: false,
+        			       				
+        			},
+        		y:{
+        			display: true,
+        			title:{
+        				display: true,
+        				text: 'Power kW'
+        			}
+        		}
+        	},
+        	plugins:{
+            	legend:{
+            		display: false
+            	},
+            	tooltips:{
+            		display: false
+            	}
+            } 
+        },
+    }
+    var ctx2 = document.getElementById('myChart2').getContext('2d');
+    var graphData2 ={
+        type: 'line',
+        data: {
+            labels: ['0', '1', '2','3', '4', '5'],
+            datasets: [{
+                label: 'Real Time Power Phase 2',
+                data: [12,12,12,12,12],
+               	backgroundColor: 'red',
+            	borderColor: 'red',
+            	color: 'red',
+            	
+            	tension: 0.4, 
+            	pointRadius: 0,
+            }]
+        },
+        options : {
+
+        	scales:{
+        		x:{
+        			display: false,
+        			       				
+        			},
+        		y:{
+        			display: true,
+        			title:{
+        				display: true,
+        				text: 'Power kW'
+        			}
+        		}
+        	},
+        	plugins:{
+            	legend:{
+            		display: false
+            	},
+            	tooltips:{
+            		display: false
+            	}
+            } 
+        },
+    }
+    var ctx3 = document.getElementById('myChart3').getContext('2d');
+    var graphData3 ={
+        type: 'line',
+        data: {
+            labels: ['0', '1', '2','3', '4', '5'],
+            datasets: [{
+                label: 'Real Time Power Phase 3',
+                data: [12,12,12,12,12],
+                backgroundColor: 'red',
+            	borderColor: 'red',
+            	color: 'red',
+            	
+            	tension: 0.4, 
+            	pointRadius: 0,
+            }]
+        },
+        options : {
+
+        	scales:{
+        		x:{
+        			display: false,
+        			       				
+        			},
+        		y:{
+        			display: true,
+        			title:{
+        				display: true,
+        				text: 'Power kW'
+        			}
+        		}
+        	},
+        	plugins:{
+            	legend:{
+            		display: false
+            	},
+            	tooltips:{
+            		display: false
+            	}
+            } 
+        },
+    }
+    
+    var myChart1 = new Chart(ctx, graphData );
+    var myChart2 = new Chart(ctx2, graphData2 );
+    var myChart3 = new Chart(ctx3, graphData3 );
+    var socket = new WebSocket('ws://localhost:8000/ws/graph/');
+    
+    socket.onmessage = function(e){
+        var djangoData = JSON.parse(e.data);
+        console.log(djangoData.datetime);
+
+        var newGraphData = graphData.data.datasets[0].data;
+        newGraphData.shift();
+        newGraphData.push(djangoData.value);
+        graphData.data.datasets[0].data = newGraphData;
+        
+        var newGraphData2 = graphData2.data.datasets[0].data;
+        newGraphData2.shift();
+        newGraphData2.push(djangoData.value);
+        graphData2.data.datasets[0].data = newGraphData2;
+        var newGraphData3 = graphData3.data.datasets[0].data;
+        newGraphData3.shift();
+        newGraphData3.push(djangoData.value);
+        graphData3.data.datasets[0].data = newGraphData3;
+		document.querySelector('#phase1current').innerText = djangoData.Phase1Current;
+		document.querySelector('#phase2current').innerText = djangoData.phase1PF;
+		document.querySelector('#TimeDikhao').innerText = djangoData.datetime;
+        myChart1.update();
+        myChart2.update();
+        myChart3.update();
+    
+       
+    }
+</script>
+
+
+{% endblock %}

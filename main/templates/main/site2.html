@@ -1,0 +1,180 @@
+{% extends 'main/base.html' %}
+What up
+{% block title %}
+Site 2
+{% endblock %}
+{% block pagetitle %}
+Site 2
+{% endblock %}
+
+{% block content %}
+<div class="section-admin container-fluid" style="padding-top: 4%;">
+    <div class="section-admin container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="white-box tranffic-als-inner">
+                    <h3 class="box-title" style="padding: 3px; text-align: center;"><small class="pull-right m-t-10 last-month-sc cl-one">Meter ID: </small>Phase 1</h3><div class="stats-row">
+                                        	
+                        <div class="stat-item">
+                            <h6>Power Factor</h6>
+                            <h6 id="phase1">2</h6></div>
+                            
+                        <div class="stat-item">
+                            <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase1current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                    <canvas id="myChart1" width="40" height="20"></canvas> </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                <div class="white-box tranffic-als-inner res-mg-t-30">
+<h3 class="box-title" style="padding: 3px; text-align: center;"><small class="pull-right m-t-10 last-month-sc cl-one"></small>Phase 2</h3>	
+                    <div class="stats-row">
+                        <div class="stat-item">
+                        <h6>Power Factor</h6>
+                            <h6 id="phase2">1</h6></div>
+
+                        <div class="stat-item">
+                              <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase2current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                    <canvas id="myChart2" width="40" height="20"></canvas> </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="white-box tranffic-als-inner res-mg-t-30">
+<h3 class="box-title" style="padding: 3px; text-align: center;">Phase 3</h3>	
+                    <div class="stats-row">
+
+                        <div class="stat-item">
+                            <h6>Power Factor</h6>
+                            <h6 id="phase3">1</h6></div>
+                            
+                        <div class="stat-item">
+                            <h6></h6>
+                            <b>|</b></div>
+                        <div class="stat-item">
+                            <h6>    Current (Amperes)</h6>
+                            <h6 id="phase3current"> 2</h6></div>
+                    </div>
+                    <div style="max-width: 70%">
+                         <canvas id="myChart3" width="40" height="20"></canvas> </div>
+                </div>
+            </div>
+        </div>  
+        <div class="container-fluid" style="padding-top: 0.5%;">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="product-sales-chart">
+                        <div class="portlet-title">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="caption pro-sl-hd">
+                                        <span class="caption-subject text-uppercase"><b>Power Consumption</b></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="actions graph-rp">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-grey active">
+                                                <input type="radio" name="options" class="toggle" id="option1" checked="">Today</label>
+                                            <label class="btn btn-grey">
+                                                <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                              <h1 id="app"  style="color: red;">
+                                <canvas id="bar-chart2" width="800" height="450"></canvas>   
+                              </h1>
+                            
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="white-box analytics-info-cs mg-b-30 res-mg-t-30">
+                        <h4 style="color: white; text-align: center">Time</h4>
+                                <h3 style="color: red; text-align: center" id="TimeDikhao" >Time</h3>
+                    </div>
+                    <div class="white-box analytics-info-cs mg-b-30 res-mg-t-30">
+                        <h4 style="color: white; text-align: center">Frequency</h4>
+                                <div class="gauge7">
+                        			<div class="gauge7__body">
+                          			<div class="gauge7__fill"></div>
+                          			<div class="gauge7__cover"></div>
+                        			</div>
+                      			</div>
+                    </div>
+                    <div class="white-box analytics-info-cs mg-b-30">
+                        <h3 class="box-title">Total Consumption Today</h3>
+                        <ul class="list-inline two-part-sp">
+                            <li>
+
+                            </li>
+                            <li class="text-right"><i class="fa fa-bolt" aria-hidden="true"></i> <span class="counter sales-								sts-ctn">6011</span></li>
+                        </ul>
+                    </div>
+                                        <div class="white-box analytics-info-cs mg-b-30">
+                        <h3 class="box-title">Total Consumption Monthly</h3>
+                        <ul class="list-inline two-part-sp">
+                            <li>
+
+                            </li>
+                            <li class="text-right"><i class="fa fa-bolt"  aria-hidden="true"></i> <span class="counter sales-								sts-ctn">6011</span></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+      const gaugeElement7 = document.querySelector(".gauge7");
+      function setGaugeValue7(gauge, value) {
+      
+      gauge.querySelector(".gauge7__fill").style.transform = `rotate(${
+        value / 200
+      }turn)`;
+      gauge.querySelector(".gauge7__cover").textContent = `${(
+        value 
+      )} Hz`;
+    }
+   
+	setGaugeValue7(gaugeElement7, 50);
+    
+    var socket = new WebSocket('ws://172.20.11.180:8000/ws/graph/');
+    
+    socket.onmessage = function(e){
+        var djangoData = JSON.parse(e.data);
+        console.log(djangoData.datetime);
+		document.querySelector('#TimeDikhao').innerText = djangoData.datetime;
+        document.querySelector('#phase1current').innerText =djangoData.Phase1Current;
+        document.querySelector('#phase2current').innerText =djangoData.Phase2Current;
+        document.querySelector('#phase3current').innerText =djangoData.Phase3Current;
+        document.querySelector('#phase1power').innerText =djangoData.Phase1Power;
+        document.querySelector('#phase1').innerText =djangoData.Phase1;
+        
+    
+       
+    }
+</script>
+
+
+{% endblock %}
