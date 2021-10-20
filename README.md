@@ -1,2 +1,2 @@
 # smartEnergy
-Dashboard for Air University Smart Energy Monitoring.
+Django Dashboard for Air University Smart Energy Monitoring.
